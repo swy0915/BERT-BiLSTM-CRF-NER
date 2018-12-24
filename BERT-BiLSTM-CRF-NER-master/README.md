@@ -1,3 +1,7 @@
+# chinese bert pre-train model
+download url: https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
+unzip model to checkpoint dir
+
 # BERT-NER
 使用谷歌的BERT模型后接softmax上进行预训练用于中文命名实体识别的Tensorflow代码
 
@@ -83,6 +87,29 @@ show my entitl level result :
 ![](/BERT-BiLSTM-CRF-NER-master/03E18A6A9C16082CF22A9E8837F7E35F.png)
 
 hn_data
+```
+  python3 bert_lstm_ner_hn.py   \
+                  --task_name="hn"  \ 
+                  --do_train=True   \
+                  --do_eval=True   \
+                  --do_predict=True
+                  --data_dir=hainan_data   \
+                  --vocab_file=checkpoint/vocab.txt  \ 
+                  --bert_config_file=checkpoint/bert_config.json \  
+                  --init_checkpoint=checkpoint/bert_model.ckpt   \
+                  --max_seq_length=128   \
+                  --train_batch_size=32   \
+                  --learning_rate=5e-5   \
+                  --num_train_epochs=10.0   \
+                  --output_dir=./output_hn_crf/result_dir
+ ```       
+test
+eval_f = 0.80709535
+eval_precision = 0.70184696
+eval_recall = 0.88123685
+global_step = 2009
+loss = 13.048834
+
 ![](/BERT-BiLSTM-CRF-NER-master/20181224111627.png)
 
 ## reference: 
