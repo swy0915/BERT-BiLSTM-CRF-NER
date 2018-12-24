@@ -1,3 +1,8 @@
+# run code env
+python 3.5 +
+tensorflow 1.11 +
+
+
 # chinese bert pre-train model
 download url: https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
 unzip model to checkpoint dir
