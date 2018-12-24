@@ -1,3 +1,6 @@
+# BERT-NER
+使用谷歌的BERT模型后接softmax上进行预训练用于中文命名实体识别的Tensorflow代码
+
 # BERT-BiLSMT-CRF-NER
 Tensorflow solution of NER task Using BiLSTM-CRF model with Google BERT Fine-tuning
 
@@ -8,6 +11,8 @@ Welcome to star this repository!
 The Chinese training data($PATH/NERdata/) come from:https://github.com/zjy-ucas/ChineseNER 
   
 The CoNLL-2003 data($PATH/NERdata/ori/) come from:https://github.com/kyzhouhzau/BERT-NER 
+
+The BERT-BiLSMT-CRF-NER code come from:https://github.com/macanv/BERT-BiLSTM-CRF-NER
   
 The evaluation codes come from:https://github.com/guillaumegenthial/tf_metrics/blob/master/tf_metrics/__init__.py  
 
@@ -74,7 +79,11 @@ all params using default
 #### entity leval result:
 last two result are label level result, the entitly level result in code of line 796-798,this result will be output in predict process.
 show my entitl level result :
+
 ![](/03E18A6A9C16082CF22A9E8837F7E35F.png)
+
+hn_data
+![](/20181224111627.png)
 
 ## reference: 
 + The evaluation codes come from:https://github.com/guillaumegenthial/tf_metrics/blob/master/tf_metrics/__init__.py
@@ -85,4 +94,5 @@ show my entitl level result :
 
 + [https://github.com/zjy-ucas/ChineseNER](https://github.com/zjy-ucas/ChineseNER)
 
-> Any problem please email me(ma_cancan@163.com)
++ [https://github.com/macanv/BERT-BiLSTM-CRF-NER](https://github.com/macanv/BERT-BiLSTM-CRF-NER)
+
