@@ -71,19 +71,19 @@ else:
 ## result:
 all params using default
 #### In dev data set:
-![](/picture1.png)
+![](/BERT-BiLSTM-CRF-NER-master/picture1.png)
 
 #### In test data set
-![](/picture2.png)
+![](/BERT-BiLSTM-CRF-NER-master/picture2.png)
 
 #### entity leval result:
 last two result are label level result, the entitly level result in code of line 796-798,this result will be output in predict process.
 show my entitl level result :
 
-![](/BERT-BiLSTM-CRF-NER/03E18A6A9C16082CF22A9E8837F7E35F.png)
+![](/BERT-BiLSTM-CRF-NER-master/03E18A6A9C16082CF22A9E8837F7E35F.png)
 
 hn_data
-![](/BERT-BiLSTM-CRF-NER/20181224111627.png)
+![](/BERT-BiLSTM-CRF-NER-master/20181224111627.png)
 
 ## reference: 
 + The evaluation codes come from:https://github.com/guillaumegenthial/tf_metrics/blob/master/tf_metrics/__init__.py
